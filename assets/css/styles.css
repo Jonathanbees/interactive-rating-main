@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Red+Hat+Display:wght@500&family=Work+Sans:wght@800&display=swap');
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body{
+  background-color: hsl(216, 12%, 8%);
+  margin-bottom: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 350px;
+  margin: 0 auto;
+  background-color: hsl(210, 13%, 13%);
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 10em;
+  margin-bottom: 0px;
+  
+  box-shadow: 0px 0px 10px 0px #000000bf;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+
+}
+.container .icon{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 100%;
+  width: 35px;
+}
+.container .icon img{
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.container h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: hsl(0, 0%, 100%);
+}
+.container p{
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: 10px;
+  color: hsl(214, 19%, 47%);
+
+}
+.container .numbers label{
+  list-style: none;
+  justify-content: space-between;
+
+  display: flexbox;
+  
+  width: 100%;
+  margin-top: 20px;
+  margin: 0px 9px;
+  padding: auto 0;
+  flex-direction: row;
+  margin-bottom: 100px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 100%;
+  height: 30px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: hsl(214, 11%, 88%);
+  margin-bottom: 20px;
+
+}
+.container .numbers input{
+  display: none;
+}
+.container .numbers .formu{
+    display: none;
+    margin-top: 30px;
+
+}
+.container .numbers input:checked ~ form{
+    display: block;
+}
+/*
+.container .numbers input:checked ~ label{
+    background-color: hsl(25, 97%, 53%);
+}
+*/
+form .button{
+    height: 45px;
+    width: 100%;
+    margin: 50px 0;
+  }
+  form .button button{
+    height: 100%;
+    width: 100%;
+    background: hsl(25, 97%, 53%);
+    border: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    
+    
+  }
+  form .button button:hover{
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+  }
+
+/*BOTONES PARA HOVER*/
+.container .numbers label:hover{
+  background-color: hsl(217, 12%, 63%);
+  transition: all 0.3s ease;
+}
+.container .numbers {
+  margin-top: 30px;
+  width: auto;
+  cursor: default;
+}
+.container .numbers .selected{
+  background-color: hsl(25, 97%, 53%)
+}
+.container .numbers .gray{
+  background-color: hsl(0, 0%, 35%);
+}
+.container .thanks{
+    display: block;
+}
+.container .hidden{
+    display: none;
+}
+.container .note{
+    font-size: 12px;
+    margin-top: 20px;
+    background-color: hsl(213, 19%, 18%);
+    
+    border-radius: 10px;
+    color: hsl(25, 97%, 53%);
+    align-items: center;
+    text-align: center;
+    padding: 5px 0;
+    justify-content: center;
+    font-size: 10px;
+    margin-bottom: 15px;
+    margin: 15px 40px;
+}
+.container .image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.container .thanks h3{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container .thanks p{
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+
+
+/*BOTONES PARA MEDIA QUERY*/
+@media (min-width: 200px) and (max-width: 570px) {
+    .container {
+      display: flex;
+      width: 40%;
+      padding: 25px;
+    }
+    .container p{
+        font-size: 12px;
+    }
+    .container .numbers label{
+      margin: 0px 1px;
+      padding: 3px 0;
+      flex-direction: column;
+      margin-bottom: 20px;
+      background-color: hsl(213, 19%, 18%);
+      border-radius: 100%;
+      height: 30px;
+      padding: 0.4em;
+      text-align: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .container .numbers .button{
+        height: 30px;
+    }
+    .container .numbers .button button{
+        font-size: 12px;
+    }
+  }
+@media (min-width: 570px) and (max-width: 742px) {
+  .container {
+    display: flex;
+    width: 40%;
+    padding: 25px;
+  }
+  .container .numbers label{
+    margin: 1px 5px;
+    padding: 3px 0;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 100%;
+    height: 30px;
+    padding: 0.7em;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .container .numbers label:hover{
+    background-color: hsl(217, 12%, 63%);
+    transition: all 0.3s ease;
+  }
+}
+@media (min-width: 743px) and (max-width: 874px) {
+  .container {
+    display: flex;
+    width: 28%;
+    padding: 25px;
+  }
+  .container .numbers label{
+    margin: 3px 3px;
+    padding: 3px 0;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 100%;
+    height: 30px;
+    padding: 0.7em;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .container .numbers label:hover{
+    background-color: hsl(217, 12%, 63%);
+    transition: all 0.3s ease;
+  }
+}
+@media (min-width: 875px) and (max-width: 951px) {
+  .container {
+    display: flex;
+    width: 28%;
+    padding: 25px;
+  }
+  .container .numbers label{
+    margin: 3px 2px;
+    padding: 3px 0;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 100%;
+    height: 30px;
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .container .numbers label:hover{
+    background-color: hsl(217, 12%, 63%);
+    transition: all 0.3s ease;
+  }
+}
+@media (min-width: 952px) and (max-width: 989px) {
+  .container {
+    display: flex;
+    width: 28%;
+    padding: 25px;
+  }
+  .container .numbers label{
+    margin: 3px 3px;
+    padding: 3px 0;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 100%;
+    height: 30px;
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .container .numbers label:hover{
+    background-color: hsl(217, 12%, 63%);
+    transition: all 0.3s ease;
+  }
+}
+
+@media (min-width: 989px) and (max-width: 1300px) {
+  .container {
+    display: flex;
+    width: 28%;
+    padding: 25px;
+  }
+  .container .numbers label{
+    margin: 3px 2px;
+    padding: 3px 0;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 100%;
+    height: 30px;
+    padding: 1.2em;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .container .numbers label:hover{
+    background-color: hsl(217, 12%, 63%);
+    transition: all 0.3s ease;
+  }
+}
+
+
+
+
+
